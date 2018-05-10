@@ -219,6 +219,7 @@ function install_apt_packages() {
 	QUIET="-qq"
     fi
     # get the required OS packages
+    # can we build this for Arch? - dirtybits
     $SUDO apt-get ${QUIET} update
     $SUDO apt-get ${QUIET} install -y --no-install-recommends \
 	  build-essential python-dev libbz2-dev libtool \
